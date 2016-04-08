@@ -3,10 +3,10 @@ var originalText = "There are two hard things in Computer Science: Cach invalida
 var wordLimit = 8;
 
 function truncateWords(longText, numWords) {
-	var longTextArray = originalText.split(' ');
-	var truncatedTextArray = longTextArray.splice(0, wordLimit);
-	truncatedTextArray.push('...');
-	var shortText = truncatedTextArray.join(' ');
+	var longTextArray = originalText.split(' '); //takes original text string and turns it into an array
+	var truncatedTextArray = longTextArray.splice(0, wordLimit); // removes the words in the array that are beyond the word limit
+	truncatedTextArray.push('...'); // adds "..." to the end of the array
+	var shortText = truncatedTextArray.join(' '); // turns the shortened array back into a string
 	return shortText;
 }
 
